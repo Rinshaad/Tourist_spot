@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% load static%}
+{% block css %}
+{{block.super}}
+    <link rel="stylesheet" href="{% static '/css/resorts.css' %}">
+{% endblock css %}
+
+{% block content %}
+<div class="container">
+    <div class="head"><h1>RESORTS</h1></div><br><hr>
+    <div class="wrapper">
+
+        
+            <div class="card">
+            <img src="{% static 'images/resort1.jpg' %}" alt="Denim Jeans">
+            <h2>Emerald  Resort</h2>
+            <p class="price">$19.99</p>
+            <p>Beutiful view & food</p>
+            <p><button>Book Now</button></p>
+          </div>
+        
+            <div class="card">
+            <img src="{% static 'images/resort2.jpg' %}" alt="Denim Jeans" >
+            <h2>Kurumba  Resort</h2>
+            <p class="price">$15.99</p>
+            <p>Beutiful view & food</p>
+            <p><button>Book Now</button></p>
+          </div>
+        
+        
+            <div class="card">
+            <img src="{% static 'images/resort3.jpg' %}" alt="Denim Jeans" >
+            <h2>Raaha Resort & Spa</h2>
+            <p class="price">$21.99</p>
+            <p>Beutiful view & food</p>
+            <p><button>Book Now</button></p>
+         
+        </div>
+        
+            <div class="card">
+            <img src="{% static 'images/resort4.jpg' %}" alt="Denim Jeans" >
+            <h2>Raviz Resort</h2>
+            <p class="price">$29.99</p>
+            <p>Beutiful view & food</p>
+            <p><button>Book Now</button></p>
+          
+        </div>
+
+    </div>
+{% endblock content %}

@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% load static%}
+{% block css %}
+{{ block.super }}
+
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+
+{% endblock css %}
+
+{% block content %}
+<div class="main">
+<h1 >ABOUT MALDIVES</h1><br><hr>
+
+<div class="container">
+    <div class="picture">
+        <img src="{% static 'images/people.jpg' %}" alt="">
+    </div>
+    <div class="head">
+        <h2>PEOPLE</h2><br><br>
+        <P>While very little is known about the ancient history of the Maldives scholars and historians believe that the Maldives is an old nation populated well over 2500 years ago. The Maldivian race is the...</P>
+    </div>
+    <div class="picture">
+        <img src="{% static 'images/culture.jpg' %}" alt="">
+
+    </div>
+    <div class="head">
+        <h2>CULTURE</h2><br><br>
+        <P>Although home to just over half a million people the Maldives has its own unique culture and traditions. While heavily influenced by various cultures around the rim of the Indian Ocean, the Maldivi...</P>
+
+    </div>
+    <div class="picture">
+        <img src="{% static 'images/environment.jpg' %}" alt="">
+
+    </div>
+    <div class="head">
+        <h2>ENVIRONMENT</h2><br><br>
+        <P>The Maldives has one of the most delicate environments anywhere on the planet. Coral reefs are the foundation of the islands. They offer protection to the tiny islands as its natural defense system...</P>
+
+    </div>
+    <div class="picture">
+        <img src="{% static 'images/geography.jpg' %}" alt="">
+
+    </div>
+    <div class="head">
+        <h2>GEOGRAPHY</h2><br><br>
+        <P>The Maldives is a nation of islands in the Indian Ocean, that spans across the equator. The country is comprised of 1192 islands that stretch along a length of 871 kilometers. While the country cov...</P>
+
+    </div>
+</div>
+</div>
+
+
+
+    
+{% endblock %}

@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+li{
+    display: inline-block;
+
+}
+ul{
+    float: right;
+    margin-top: 30px;
+}
+.nav a{
+    text-decoration: none;
+    border: 1px solid white;
+    padding:5px 20px;
+    transition: .6s ease;
+    color:white;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+.nav a:hover{
+    background-color: white;
+    color: black;
+}
+.active a{
+    background-color: aliceblue;
+    color: black;
+}
+
+
+.logo img{
+    float: left;
+    width: 180px;
+    height: auto;
+    padding: 10px;
+}
+.nav{
+    height: 13vh;
+    background-color: rgb(15, 49, 49);
+    padding-right: 20px;
+    padding-left: 20px;
+    position: sticky;
+    top: 0px;
+
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@800&family=Poppins&family=Roboto&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    position: relative;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    /* grid-template-rows: repeat(4,25%); */
+    margin-top: 50px;
+    grid-gap: 50px;
+    
+}
+.head{
+    background-color: #b4cdcf4d;;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px;
+}
+.head h2{
+    color: brown;
+    width: fit-content;
+    border-radius: 5px;
+}
+.container img{
+    width: 100%;
+    border: 5px solid rgb(37, 39, 39);
+    border-radius: 5px;
+
+}
+.main{
+    margin: 0 100px;
+    font-family:'Poppins',sans-serif;
+}

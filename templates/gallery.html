@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% load static%}
+{% block css %}
+{{block.super}}
+    <link rel="stylesheet" href="{% static '/css/gallery.css' %}">
+{% endblock css %}
+
+{% block content %}
+<div class="container">
+    <div class="head"><h1>Photo <span>Gallery</span></h1></div><br><hr>
+    <div class="wrapper">
+    <div class="item1"><img src="{% static 'images/m.jpg' %}" alt=""></div>
+    <div class="item2"><img src="{% static 'images/r.jpg' %}" alt=""></div>
+    <div class="item3"><img src="{% static 'images/l.jpg' %}" alt=""></div>
+    <div class="item4"><img src="{% static 'images/2.jpg' %}" alt=""></div>
+    <div class="item5"><img src="{% static 'images/3.jpg' %}" alt=""></div>
+    <div class="item6"><img src="{% static 'images/1.jpg' %}" alt=""></div>
+    <div class="item7"><img src="{% static 'images/4.jpg' %}" alt=""></div>
+    </div>
+    
+</div>
+
+
+   
+ {% endblock %}
